@@ -54,9 +54,9 @@ for (let i = array.length - 1; i >= 0; i--) {
 console.log(reversedArray);
 
 //way 2
-
+// let array1 = [1, 2, 3, 4, 5];
 // let reversedArray2 = [];
-// for (num of array) {
+// for (let num of array1) {
 //   reversedArray2.unshift(num);
 // }
 // console.log(reversedArray2);
