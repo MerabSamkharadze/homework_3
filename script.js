@@ -45,12 +45,21 @@ let evenOrOdd = (number) =>
 evenOrOdd(1998);
 
 // დავალება 5
+// way 1
 let array = [1, 2, 3, 4, 5];
 let reversedArray = [];
 for (let i = array.length - 1; i >= 0; i--) {
   reversedArray.push(array[i]);
 }
 console.log(reversedArray);
+
+//way 2
+
+// let reversedArray2 = [];
+// for (num of array) {
+//   reversedArray2.unshift(num);
+// }
+// console.log(reversedArray2);
 
 // დავალება 6
 
