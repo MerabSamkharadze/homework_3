@@ -22,27 +22,29 @@ let user = {
 };
 
 let logginedUserName = function () {
-  user.isloggedin === true
-    ? console.log(`${user.firstname} ${user.lastname}`)
-    : console.log(false);
+  if (user.isloggedin) {
+    return `${user.firstname} ${user.lastname}`;
+  }
+  return false;
 };
-logginedUserName();
+let result2 = logginedUserName();
+console.log(result2);
 
 // დავალება 3
 
 let getMaxNumber = (...numbers) => {
-  console.log(Math.max(...numbers));
+  return Math.max(...numbers);
 };
-getMaxNumber(10, 50, 6, 7, 8, 11, 6, 3, 9);
+let result3 = getMaxNumber(10, 50, 6, 7, 8, 11, 6, 3, 9);
+console.log(result3);
 
 // დავალება 4
 
 let evenOrOdd = (number) =>
-  number % 2 === 0
-    ? console.log("this number is even")
-    : console.log("this number is odd");
+  number % 2 === 0 ? "this number is even" : "this number is odd";
 
-evenOrOdd(1998);
+let result4 = evenOrOdd(1998);
+console.log(result4);
 
 // დავალება 5
 // way 1
